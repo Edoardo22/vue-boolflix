@@ -12,16 +12,21 @@
 
 <script>
 import { filmData } from "../store"
+import { tvData } from "../store"
+
 export default {
     data() {
         return {
             searchText: "",
+
         }
     },
     methods:
     {
         onSearchData() {
             filmData(this.searchText);
+            tvData(this.searchText);
+
         }
     }
 }
